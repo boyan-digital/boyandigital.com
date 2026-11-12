@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#0c284d">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src 'self'; connect-src https://api.github.com; base-uri 'none'; form-action 'none'">
+<title>Helper · Boyan Digital</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<style>
+:root{color-scheme:dark;--bg:#081c36;--panel:#102d50;--ink:#f4f7fc;--muted:#a9bfd8;--line:#2a4769;--accent:#ff982e;--green:#70e3b4;--red:#ff9f9f}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}button,input{font:inherit}button,a,input{touch-action:manipulation}button,a{outline-offset:5px}button{cursor:pointer}button:disabled{cursor:wait;opacity:.6}a{color:inherit}.shell{max-width:920px;margin:auto;padding:0 28px}header{border-bottom:1px solid var(--line)}.nav{min-height:86px;display:flex;justify-content:space-between;align-items:center;gap:20px}.brand{font-weight:750;letter-spacing:-.5px;font-size:19px;text-decoration:none}.brand small{font-size:11px;letter-spacing:2px;display:block;color:var(--muted);font-weight:500;margin-top:-4px}.quiet{border:1px solid var(--line);border-radius:8px;background:transparent;color:var(--ink);padding:9px 15px;font-size:13px}.quiet:hover{background:var(--panel)}main{padding:40px 0 64px}.topline{display:flex;align-items:center;gap:14px;justify-content:space-between;margin-bottom:25px}.eyebrow{color:var(--accent);font-size:11px;letter-spacing:2px;font-weight:750;text-transform:uppercase}.feed{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--muted)}.dot{width:7px;height:7px;background:#8297af;border-radius:50%;flex:none}.dot.live{background:var(--green);box-shadow:0 0 0 4px #70e3b412}.dot.busy{background:var(--accent)}.dot.error{background:var(--red)}h1{font-size:clamp(30px,5vw,44px);letter-spacing:-1.5px;line-height:1.15;margin:0 0 12px}#message{color:var(--muted);font-size:14px;margin:0}.intro{margin-bottom:28px}.empty{border:1px dashed var(--line);border-radius:16px;text-align:center;padding:65px 24px;margin:28px 0}.symbol{font-size:34px;color:var(--accent);margin-bottom:16px}.empty h2{font-size:21px;letter-spacing:-.5px;margin:0 0 10px}.empty p{max-width:370px;margin:0 auto 22px;color:var(--muted);font-size:14px}.primary{border:0;background:var(--accent);color:#10243d;padding:12px 20px;border-radius:8px;font-weight:750}.primary:hover{background:#ffb15c}.answer{display:grid;grid-template-columns:82px 1fr;gap:22px;align-items:center;padding:26px;background:#0f3b35;border:1px solid #398a70;border-radius:14px;margin:26px 0}.letter{width:82px;height:82px;border-radius:12px;background:var(--green);color:#09352b;display:grid;place-items:center;font-size:43px;line-height:1;font-weight:800;overflow-wrap:anywhere}.answer-tag{font-size:10px;text-transform:uppercase;letter-spacing:1.6px;color:var(--green);font-weight:750;margin-bottom:5px}.answer-text{font-size:clamp(21px,4vw,29px);font-weight:650;letter-spacing:-.6px;line-height:1.3;overflow-wrap:anywhere}.question{font-size:clamp(19px,3vw,24px);font-weight:600;letter-spacing:-.5px;line-height:1.5;margin:28px 0 18px;overflow-wrap:anywhere}.choices{display:grid;gap:10px}.choice{display:flex;gap:14px;align-items:flex-start;padding:17px 19px;border:1px solid var(--line);border-radius:10px;background:#0d2746;color:#bdcde0}.choice b{background:#1f3b5c;border-radius:6px;min-width:30px;min-height:30px;text-align:center;padding:2px 5px;font-size:14px;flex:none}.choice span{padding-top:2px;overflow-wrap:anywhere}.choice.pick{border-color:#398a70;color:var(--ink);background:#0e322e}.choice.pick b{background:var(--green);color:#09352b}.detail{border-top:1px solid var(--line);padding-top:23px;margin-top:27px}.detail-head{display:flex;align-items:center;justify-content:space-between;gap:15px;color:var(--muted);font-size:12px}.confidence{border:1px solid var(--line);border-radius:99px;padding:4px 11px;font-size:11px}.confidence.high{color:var(--green);border-color:#398a70}.confidence.medium{color:#ffbd78}.confidence.low{color:var(--red)}#explanation{color:#c6d4e5;font-size:14px;margin:15px 0}#sources{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:12px}#sources a{color:var(--muted);text-underline-offset:3px;overflow-wrap:anywhere}footer{display:flex;justify-content:space-between;gap:18px;color:#7f99b6;font-size:11px;border-top:1px solid var(--line);padding-top:20px;margin-top:38px}footer a{color:var(--muted);text-underline-offset:3px}.notice{border-left:3px solid var(--accent);padding:12px 16px;margin-top:22px;background:#ff982e0b;font-size:13px;color:#ffd0a0}dialog{border:1px solid #49617c;border-radius:16px;max-width:480px;width:calc(100% - 32px);background:#102d50;color:var(--ink);padding:28px}dialog::backdrop{background:#020b18bb}dialog h2{font-size:24px;letter-spacing:-.7px;margin:0 0 12px}dialog p{color:#bdcde0;font-size:14px}label{display:block;font-size:13px;font-weight:650;margin:24px 0 8px}input{width:100%;padding:12px;background:#081c36;border:1px solid #4a6480;border-radius:8px;color:white;min-width:0}input:focus{outline:2px solid var(--accent);outline-offset:2px}.form-actions{display:flex;justify-content:space-between;gap:12px;margin-top:22px;flex-wrap:wrap}.form-error{color:var(--red);font-size:13px;min-height:20px;margin-top:12px}details{font-size:12px;color:var(--muted);margin-top:14px}details summary{cursor:pointer}details p{font-size:12px}code{overflow-wrap:anywhere}.danger{background:none;border:0;color:var(--red);text-decoration:underline;font-size:12px;padding:0}.dialog-close{float:right;background:none;color:var(--muted);font-size:24px;border:0;margin:-10px -6px 0 10px}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}[hidden]{display:none!important}@media(max-width:560px){.shell{padding:0 20px}.nav{min-height:75px}.brand{font-size:17px}main{padding-top:30px}.answer{padding:20px;gap:16px;grid-template-columns:62px 1fr}.letter{width:62px;height:66px;font-size:35px}.topline{gap:10px}.feed{font-size:11px}footer{flex-direction:column;gap:8px}.empty{padding:44px 20px}}@media(prefers-reduced-motion:no-preference){.answer{animation:arrive .2s ease-out}@keyframes arrive{from{transform:translateY(5px);opacity:.5}to{transform:translateY(0);opacity:1}}}
+</style>
+</head>
+<body>
+<header><nav class="shell nav" aria-label="Main"><a class="brand" href="/">Boyan Digital<small>HELPER</small></a><button type="button" class="quiet" id="connection-button">Connect helper</button></nav></header>
+<main class="shell">
+<div class="topline"><span class="eyebrow">Your live answer feed</span><span class="feed"><span class="dot" id="dot" aria-hidden="true"></span><span id="feed-label" role="status">Not connected</span></span></div>
+<section class="intro"><h1>Answers, as they arrive.</h1><p id="message" role="status">Connect once, then keep this page open beside your helper.</p></section>
+<div class="notice" id="notice" hidden></div>
+<section class="empty" id="empty"><div class="symbol" aria-hidden="true">↗</div><h2 id="empty-title">Ready when you are.</h2><p id="empty-text">Run Updater on your PC and connect its private answer feed here. No manual page refresh needed.</p><button class="primary" type="button" id="empty-connect">Connect helper</button></section>
+<section id="result" hidden aria-label="Latest answer">
+<div class="answer" id="answer-summary"><div class="letter" id="answer-label"></div><div><div class="answer-tag">Suggested answer</div><div class="answer-text" id="answer-text"></div></div></div>
+<h2 class="question" id="question"></h2><div class="choices" id="choices"></div>
+<div class="detail"><div class="detail-head"><span class="confidence" id="confidence"></span><span id="updated"></span></div><p id="explanation"></p><div id="sources" aria-label="Sources"></div></div>
+</section>
+<footer><span>Updates automatically while this page is open.</span><a href="https://hq.boyandigital.com" target="_blank" rel="noopener">Open BDHQ ↗</a></footer>
+</main>
+<dialog id="connection-dialog" aria-labelledby="dialog-title">
+<button type="button" class="dialog-close" id="close-dialog" aria-label="Close connection settings">×</button>
+<h2 id="dialog-title">Connect your helper</h2><p>Use the connection key already saved with Updater. Your answers stay behind that key.</p>
+<form id="connection-form"><label for="connection-key">Helper connection key</label><input id="connection-key" type="password" autocomplete="off" autocapitalize="none" spellcheck="false" placeholder="Paste your existing key" required>
+<details><summary>Where do I find the key?</summary><p>On your PC, open <code>github_token.txt</code> in the QuizHelper folder and copy its contents. Use the same key that connects the Helper tab in BDHQ.</p></details>
+<p class="hint">The key is sent only to GitHub and kept in this browser tab's session. It is never included in the website files.</p>
+<div class="form-error" id="form-error" role="alert"></div><div class="form-actions"><button class="primary" type="submit" id="connect-submit">Connect</button><button class="danger" type="button" id="disconnect" hidden>Disconnect this tab</button></div>
+</form></dialog>
+<script>
+(() => {
+  'use strict';
+  const API = 'https://api.github.com/repos/boyan-digital/hq/contents/state.json?ref=helper-relay';
+  const STORAGE = 'boyan.helper.connection.v1', POLL_MS = 500;
+  const $ = id => document.getElementById(id);
+  let key = '', etag = '', revision = '', timer = null, busy = false, generation = 0;
+  let active = null, lastState = null, blockedUntil = 0, failures = 0, validating = false;
+  try { key = sessionStorage.getItem(STORAGE) || ''; } catch {}
+  function status(kind, label, message) {
+    $('dot').className = 'dot ' + kind; $('feed-label').textContent = label;
+    if (message) $('message').textContent = message;
+  }
+  function ago(at) {
+    const secs = Math.max(0, Math.floor(Date.now()/1000 - Number(at || 0)));
+    return secs < 60 ? secs + 's ago' : secs < 3600 ? Math.floor(secs/60) + 'm ago' : Math.floor(secs/3600) + 'h ago';
+  }
+  function refreshAge() {
+    if (lastState && lastState.at) $('updated').textContent = 'Helper updated ' + ago(lastState.at);
+  }
+  function showConnection() {
+    $('disconnect').hidden = !key; $('form-error').textContent = '';
+    $('connection-dialog').showModal(); $('connection-key').focus();
+  }
+  function schedule(delay) {
+    clearTimeout(timer);
+    if (key && !document.hidden) timer = setTimeout(poll, Math.max(delay, blockedUntil - Date.now()));
+  }
+  function stop() {
+    generation++; clearTimeout(timer); if (active) active.abort(); active = null;
+  }
+  function saveKey() { try { sessionStorage.setItem(STORAGE, key); } catch {} }
+  function forgetKey() { try { sessionStorage.removeItem(STORAGE); } catch {} }
+  function showError(message, auth = false) {
+    status('error', auth ? 'Check connection' : 'Reconnecting', message);
+    $('form-error').textContent = message;
+    if (auth) { validating = false; forgetKey(); }
+  }
+  function render(state) {
+    lastState = state;
+    const stopped = state.status === 'stopped';
+    status(stopped ? 'error' : state.status === 'thinking' ? 'busy' : 'live', stopped ? 'Helper stopped' : state.status === 'thinking' ? 'Checking screen' : 'Feed connected', state.message || 'Waiting for a question…');
+    $('notice').hidden = !stopped;
+    $('notice').textContent = 'Updater is stopped on the PC. Start it again to receive new answers.';
+    const result = state.result;
+    if (!result || !result.has_question) {
+      $('result').hidden = true; $('empty').hidden = false; $('empty-connect').hidden = true;
+      $('empty-title').textContent = stopped ? 'Your helper is paused.' : state.status === 'thinking' ? 'Working on this one…' : 'Watching for the next question.';
+      $('empty-text').textContent = stopped ? 'Open Updater on your PC. This page will reconnect automatically.' : 'Keep Updater running on the PC. The next answer will appear here automatically.';
+      return;
+    }
+    const choices = Array.isArray(result.choices) ? result.choices : [];
+    const index = Number.isInteger(result.answer_index) ? result.answer_index : -1;
+    const chosen = choices[index];
+    $('empty').hidden = true; $('result').hidden = false;
+    $('answer-summary').hidden = !chosen;
+    if (chosen) { $('answer-label').textContent = String(chosen.label || index + 1); $('answer-text').textContent = String(chosen.text || ''); }
+    $('question').textContent = String(result.question || '');
+    const fragment = document.createDocumentFragment();
+    choices.forEach((choice, i) => {
+      const row = document.createElement('div'); row.className = 'choice' + (i === index ? ' pick' : '');
+      const label = document.createElement('b'); label.textContent = String(choice.label || i + 1);
+      const text = document.createElement('span'); text.textContent = String(choice.text || '');
+      row.append(label, text); fragment.append(row);
+    });
+    $('choices').replaceChildren(fragment);
+    const confidence = ['high', 'medium', 'low'].includes(result.confidence) ? result.confidence : 'low';
+    $('confidence').className = 'confidence ' + confidence; $('confidence').textContent = confidence + ' confidence';
+    $('explanation').textContent = String(result.explanation || '');
+    $('sources').replaceChildren();
+    (Array.isArray(result.sources) ? result.sources : []).slice(0, 3).forEach(value => {
+      try {
+        const url = new URL(value); if (!['https:', 'http:'].includes(url.protocol)) return;
+        const link = document.createElement('a'); link.href = url.href; link.target = '_blank'; link.rel = 'noopener noreferrer'; link.textContent = url.hostname.replace(/^www\./, '') + ' ↗'; $('sources').append(link);
+      } catch {}
+    });
+    refreshAge();
+  }
+  async function poll() {
+    clearTimeout(timer);
+    if (!key || document.hidden) return false;
+    if (busy) { schedule(POLL_MS); return false; }
+    if (Date.now() < blockedUntil) { schedule(0); return false; }
+    busy = true;
+    const epoch = generation, started = performance.now();
+    let delay = POLL_MS, timeout;
+    active = new AbortController();
+    timeout = setTimeout(() => active && active.abort(), 10000);
+    try {
+      const response = await fetch(API, { headers: { Authorization: 'Bearer ' + key, Accept: 'application/vnd.github+json', 'X-GitHub-Api-Version': '2022-11-28', ...(etag ? {'If-None-Match': etag} : {}) }, cache: 'no-store', signal: active.signal });
+      if (epoch !== generation) return false;
+      if (response.status === 401) {
+        showError('That connection key was not accepted. Check it or use a current key.', true); key = ''; return false;
+      }
+      if (response.status === 403 || response.status === 429) {
+        const error = await response.json().catch(() => ({}));
+        const limited = response.status === 429 || response.headers.has('Retry-After') || response.headers.get('X-RateLimit-Remaining') === '0' || /rate limit|abuse/i.test(error.message || '');
+        if (!limited) { showError('This key needs Contents read access to the boyan-digital/hq repository.', true); key = ''; return false; }
+        const retry = response.headers.get('Retry-After'), reset = Number(response.headers.get('X-RateLimit-Reset')) * 1000;
+        let wait = retry === null ? (reset > Date.now() ? reset - Date.now() + 1000 : 60000) : /^\d+$/.test(retry) ? Number(retry)*1000 : Date.parse(retry)-Date.now();
+        if (!Number.isFinite(wait)) wait = 60000;
+        blockedUntil = Date.now() + Math.max(1000, wait);
+        showError('The feed is taking a short break. It will reconnect automatically.'); return false;
+      }
+      if (response.status === 404) { showError('No feed is available yet. Start Updater and check that this key has access to its repository.'); delay = 15000; return false; }
+      if (response.status === 304) { failures = 0; refreshAge(); if (lastState) status(lastState.status === 'stopped' ? 'error' : lastState.status === 'thinking' ? 'busy' : 'live', lastState.status === 'stopped' ? 'Helper stopped' : lastState.status === 'thinking' ? 'Checking screen' : 'Feed connected', lastState.message); return true; }
+      if (!response.ok) throw new Error('Feed unavailable');
+      const data = await response.json();
+      const bytes = Uint8Array.from(atob(String(data.content).replace(/\s/g, '')), c => c.charCodeAt(0));
+      const state = JSON.parse(new TextDecoder().decode(bytes));
+      if (typeof state.status !== 'string' || !Number.isFinite(state.at)) throw new Error('Invalid feed');
+      if (epoch !== generation) return false;
+      etag = response.headers.get('ETag') || ''; failures = 0;
+      const stamp = String(state.version) + ':' + String(state.at);
+      if (stamp !== revision) { revision = stamp; render(state); }
+      else refreshAge();
+      if (validating) { validating = false; saveKey(); $('connection-dialog').close(); $('connection-key').value = ''; }
+      $('connection-button').textContent = 'Connection'; $('disconnect').hidden = false;
+      return true;
+    } catch (error) {
+      if (epoch !== generation) return false;
+      showError('Connection interrupted. Retrying automatically…');
+      delay = Math.min(60000, 5000 * 2 ** Math.min(failures++, 4));
+      return false;
+    } finally {
+      clearTimeout(timeout); busy = false; active = null;
+      if (epoch === generation) schedule(Math.max(0, delay - (performance.now() - started)));
+    }
+  }
+  $('connection-button').addEventListener('click', showConnection);
+  $('empty-connect').addEventListener('click', showConnection);
+  $('close-dialog').addEventListener('click', () => $('connection-dialog').close());
+  $('connection-form').addEventListener('submit', async event => {
+    event.preventDefault();
+    const next = $('connection-key').value.trim(); if (!next) return;
+    stop(); key = next; etag = ''; blockedUntil = 0; failures = 0; validating = true;
+    $('form-error').textContent = ''; $('connect-submit').disabled = true;
+    status('busy', 'Connecting', 'Opening your helper feed…');
+    try { await poll(); } finally { $('connect-submit').disabled = false; }
+  });
+  $('disconnect').addEventListener('click', () => {
+    stop(); key = ''; etag = ''; revision = ''; lastState = null; validating = false; forgetKey();
+    $('connection-dialog').close(); $('result').hidden = true; $('notice').hidden = true; $('empty').hidden = false; $('empty-connect').hidden = false;
+    $('empty-title').textContent = 'Ready when you are.'; $('empty-text').textContent = 'Run Updater on your PC and connect its private answer feed here.';
+    $('connection-button').textContent = 'Connect helper'; status('', 'Not connected', 'Connect once, then keep this page open beside your helper.');
+  });
+  document.addEventListener('visibilitychange', () => { if (document.hidden) clearTimeout(timer); else if (key) poll(); });
+  window.addEventListener('online', () => { if (key) poll(); });
+  setInterval(refreshAge, 1000);
+  if (key) { status('busy', 'Connecting', 'Opening your helper feed…'); poll(); }
+})();
+</script>
+</body></html>
